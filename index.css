@@ -1,23 +1,24 @@
-body{
+body {
     margin: 0px;
     padding: 0px;
-    font-family: "Zen Kaku Gothic New", sans-serif;font-weight: 400;
+    font-family: "Zen Kaku Gothic New", sans-serif;
+    font-weight: 400;
     font-style: normal;
 }
 
 /* 全体 */
-.btn-cover{
+.btn-cover {
     background-color: #ffffff;
     font-size: 15px;
     display: flex;
-    /* gap: 6%; */
     width: 100%;
     margin: 0px auto;
     position: fixed;
     border-bottom: 2px solid #000;
     z-index: 90;
 
-    .btn-1,.btn-2{
+    .btn-1,
+    .btn-2 {
         display: block;
         width: 43%;
         margin: 0 auto;
@@ -30,51 +31,57 @@ body{
         height: 20px;
         z-index: 85;
     }
-    .btn-1{
-        background-color: #F78DA7;
+
+    .btn-1 {
+        background-color: #FFFF00;
     }
-    .btn-2{
-        background-color:#8ED1FC;
+
+    .btn-2 {
+        background-color: #8ED1FC;
     }
 }
 
 
-.subpage{
+.subpage {
     display: none;
     position: absolute;
     top: 37.6px;
     width: 100%;
 
 }
-.subpage-1{
+
+.subpage-1 {
     background-color: #ffffff;
 }
-.subpage-2{
+
+.subpage-2 {
     background-color: #ffffff;
 }
-.is-subpage-active{
+
+.is-subpage-active {
     display: block;
 }
 
 /* びじゅチューン作品一覧 */
 
-#container{
+#container {
     width: 100%;
     display: flex;
-    justify-content:space-between;
+    justify-content: space-between;
     flex-wrap: wrap;
     gap: 16px;
     background-color: #ffffff;
     width: 98%;
     margin: 0px auto;
     /* 方眼紙模様に必須のスタイル */
-  background-image: linear-gradient(0deg, transparent calc(100% - 1px), #f0f0f0 calc(100% - 1px)),
-  linear-gradient(90deg, transparent calc(100% - 1px), #d9d9d9 calc(100% - 1px));
-background-size: 16px 16px;
-background-repeat: repeat;
-background-position: center center;
-padding-top: 20px;
-    .item{
+    background-image: linear-gradient(0deg, transparent calc(100% - 1px), #f0f0f0 calc(100% - 1px)),
+        linear-gradient(90deg, transparent calc(100% - 1px), #d9d9d9 calc(100% - 1px));
+    background-size: 16px 16px;
+    background-repeat: repeat;
+    background-position: center center;
+    padding-top: 20px;
+
+    .item {
         display: block;
         width: 190px;
         height: 264px;
@@ -82,9 +89,9 @@ padding-top: 20px;
         border-radius: 12px;
         margin: 0 auto;
         border: 1.5px solid #000;
-        /* margin: 2px; */
         background-color: #ffffff;
-        & img{
+
+        & img {
             display: block;
             width: 173px;
             height: 98px;
@@ -92,26 +99,30 @@ padding-top: 20px;
             border-radius: 10px;
             border: 1.5px solid #000;
         }
-        & a{
+
+        & a {
             display: block;
             width: 173px;
             height: 98px;
             margin: 8px auto;
-            
+
         }
-        
+
     }
 
 
 }
 
-.title{
+.title {
     width: 100%;
     text-align: center;
     margin: 0 auto;
 }
 
-.model,.model-author,.model-year,.place{
+.model,
+.model-author,
+.model-year,
+.place {
     width: 90%;
     height: auto;
     font-size: 13px;
@@ -121,22 +132,20 @@ padding-top: 20px;
 }
 
 /* キャラクター図鑑 */
-#tab{
+#tab {
     width: 96%;
     margin: 0 auto;
     display: flex;
     padding-top: 20px;
-    /* position: fixed; */
 }
-#tab-btn-cover{
-   display: flex;
-   flex-direction: column;
-   gap: 12px;
-   /* width: 52px;
-   height: 100dvh;
-   overflow: scroll; */
+
+#tab-btn-cover {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
 }
-.tab-btn{
+
+.tab-btn {
     writing-mode: vertical-lr;
     font-size: 13px;
     text-align: center;
@@ -147,16 +156,28 @@ padding-top: 20px;
     border-width: 2px 0px 2px 2px;
     cursor: pointer;
 }
-.tab-btn-1{
+
+.tab-btn-1 {
     background-color: #F78DA7;
 }
-.tab-btn-2{
+
+.tab-btn-2 {
     background-color: #CF2E2E;
 }
-.tab-btn-3{
+
+.tab-btn-3 {
     background-color: #FF6900;
 }
-.tab-page{
+
+.tab-btn-4 {
+    background-color: #FCB900;
+}
+
+.tab-btn-5 {
+    background-color: #7BDCB5;
+}
+
+.tab-page {
     width: 100%;
     height: 88dvh;
     background-color: #ffffff;
@@ -167,31 +188,22 @@ padding-top: 20px;
     overflow-y: scroll;
 
     /* 方眼紙模様に必須のスタイル */
-  background-image: linear-gradient(0deg, transparent calc(100% - 1px), #f0f0f0 calc(100% - 1px)),
-  linear-gradient(90deg, transparent calc(100% - 1px), #d9d9d9 calc(100% - 1px));
-background-size: 16px 16px;
-background-repeat: repeat;
-background-position: center center;
+    background-image: linear-gradient(0deg, transparent calc(100% - 1px), #f0f0f0 calc(100% - 1px)),
+        linear-gradient(90deg, transparent calc(100% - 1px), #d9d9d9 calc(100% - 1px));
+    background-size: 16px 16px;
+    background-repeat: repeat;
+    background-position: center center;
 
 }
 
-/* #tab-1{
-    background-color: #F78DA7;
-}
-#tab-2{
-    background-color: #CF2E2E;
-}
-#tab-3{
-    background-color: #FF6900;
-} */
-
-.is-tab-page-active{
+.is-tab-page-active {
     display: flex;
     flex-wrap: wrap;
     gap: 24px;
 
 }
-.box{
+
+.box {
     background-color: #ffffff;
     width: 264px;
     margin: 0 auto;
@@ -200,7 +212,7 @@ background-position: center center;
     border: 2px solid #000;
 
 
-    & img{
+    & img {
         width: 164px;
         height: 164px;
         object-fit: cover;
@@ -209,14 +221,16 @@ background-position: center center;
         display: block;
         margin: 5px auto;
     }
-    .name{
+
+    .name {
         width: 100%;
         font-size: 24px;
         text-align: center;
         margin: 0 auto;
         border-bottom: 1px solid #000;
     }
-    .relate{
+
+    .relate {
         font-size: 14px;
         margin-top: 10px;
     }
