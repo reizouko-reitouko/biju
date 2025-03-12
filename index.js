@@ -125,6 +125,8 @@ document.addEventListener("DOMContentLoaded", function () {
             createBoxes("tab-1", "joconda");
             createBoxes("tab-2", "highSchool");
             createBoxes("tab-3", "juniorHighSchool");
+            createBoxes("tab-4", "miyamoto");
+            createBoxes("tab-5", "hino");
         })
         .catch(error => console.error("JSON読み込みエラー:", error));
 });
